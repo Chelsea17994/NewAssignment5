@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        
+            <title>Assignment 5</title>
+            <meta name="description" content="This is the description">
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <style>
+                
+            </style>
+            <table border="1" width="200">
+                <tr>
+                    <th>COUNTRY</th>
+                    <th>POPULATION</th>
+                </tr>
+                <tr>
+                    <td>Australia</td>
+                    <td>24 099 000</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>37 059 000</td>
+                </tr>
+                <tr>
+                    <td>England</td>
+                    <td>55 098 000</td>
+                </tr>
+                <tr>
+                    <td>New Zealand</td>
+                    <td>4 886 000</td>
+                </tr>
+            </table>
+            <div>
+                <table border="1" width="350">
+                    <tr>
+                        <th>PIZZA TYPE</th>
+                        <th>VOTES</th>
+                    </tr>
+                    <tr>
+                        <td>Pepperoni</td>
+                        <td>249</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese</td>
+                        <td>167</td>
+                    </tr>
+                    <tr>
+                        <td>Hawaiian</td>
+                        <td>380</td>
+                    </tr>
+                </table>
+            </div>
+           <input type="button" id="zebra" onclick="zebra()" value="Zebra" class="btn">
+           <input type="button" id="normal" onclick="normal()" value="Non-Zebra" class="btn">
+           
+        </body>
+        <script>
+            function zebra(){
+                var style = document.createElement("style");
+                document.head.appendChild(style);
+                style.sheet.insertRule("tr:nth-child(odd) {background-color: black; color: white;}");
+            }
+            function normal(){
+                var style = document.createElement("style");
+                document.head.appendChild(style);
+                style.sheet.insertRule("tr:nth-child(odd) {background-color: white; color: black;}");
+            }
+        </script>
+    </html>
